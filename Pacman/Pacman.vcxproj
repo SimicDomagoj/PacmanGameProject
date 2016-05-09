@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{907F7DE1-73C1-4228-BA9E-11C95DA516CD}</ProjectGuid>
+    <RootNamespace>Pacman</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\domi\SDL2-2.0.4\SDL2_ttf-2.0.14\include;D:\domi\SDL2-2.0.4\SDL2_image-2.0.1\include;D:\domi\SDL2-2.0.4\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\domi\SDL2-2.0.4\SDL2_ttf-2.0.14\lib\x86;D:\domi\SDL2-2.0.4\SDL2_image-2.0.1\lib\x86;D:\domi\SDL2-2.0.4\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>D:\domi\SDL2-2.0.4\SDL2_ttf-2.0.14\include;D:\domi\SDL2-2.0.4\SDL2_image-2.0.1\include;D:\domi\SDL2-2.0.4\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\domi\SDL2-2.0.4\SDL2_ttf-2.0.14\lib\x86;D:\domi\SDL2-2.0.4\SDL2_image-2.0.1\lib\x86;D:\domi\SDL2-2.0.4\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Actors\Ghost.cpp" />
+    <ClCompile Include="Actors\Pacman.cpp" />
+    <ClCompile Include="AI\BlinkyAI.cpp" />
+    <ClCompile Include="AI\ClydeAI.cpp" />
+    <ClCompile Include="AI\GhostAI.cpp" />
+    <ClCompile Include="AI\InkyAI.cpp" />
+    <ClCompile Include="AI\PinkyAI.cpp" />
+    <ClCompile Include="Factory\GameObjectFactory.cpp" />
+    <ClCompile Include="Factory\GhostFactory.cpp" />
+    <ClCompile Include="Factory\PacmanFactory.cpp" />
+    <ClCompile Include="Factory\ScreenFactory.cpp" />
+    <ClCompile Include="Graphics\GhostGraphics.cpp" />
+    <ClCompile Include="Graphics\PacmanGraphics.cpp" />
+    <ClCompile Include="Image\Image.cpp" />
+    <ClCompile Include="Input\PacmanInput.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Manipulators\DotComponent.cpp" />
+    <ClCompile Include="Manipulators\PowerUpComponent.cpp" />
+    <ClCompile Include="Manipulators\TeleporterPhysics.cpp" />
+    <ClCompile Include="Map\PacmanMap.cpp" />
+    <ClCompile Include="Physics\GhostPhysics.cpp" />
+    <ClCompile Include="Physics\PacmanPhysics.cpp" />
+    <ClCompile Include="Screens\DiedScreen.cpp" />
+    <ClCompile Include="Screens\GameOverScreen.cpp" />
+    <ClCompile Include="Screens\MainScreen.cpp" />
+    <ClCompile Include="Screens\OptionsScreen.cpp" />
+    <ClCompile Include="Screens\PauseScreen.cpp" />
+    <ClCompile Include="Screens\PlayScreen.cpp" />
+    <ClCompile Include="Screens\ScoresScreen.cpp" />
+    <ClCompile Include="Screens\TransitionScreen.cpp" />
+    <ClCompile Include="Service\CollisionService.cpp" />
+    <ClCompile Include="Service\Font.cpp" />
+    <ClCompile Include="Service\Options.cpp" />
+    <ClCompile Include="Service\ScoresHandler.cpp" />
+    <ClCompile Include="Timer\Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actors\Actor.h" />
+    <ClInclude Include="Actors\Ghost.h" />
+    <ClInclude Include="Actors\Pacman.h" />
+    <ClInclude Include="AI\GhostAI.h" />
+    <ClInclude Include="Consts\Constants.h" />
+    <ClInclude Include="Factory\GameObjectFactory.h" />
+    <ClInclude Include="Factory\GhostFactory.h" />
+    <ClInclude Include="Factory\PacmanFactory.h" />
+    <ClInclude Include="Factory\ScreenFactory.h" />
+    <ClInclude Include="Graphics\GhostGraphics.h" />
+    <ClInclude Include="Graphics\GraphicsComponent.h" />
+    <ClInclude Include="Graphics\ObjectGraphicsComponent.h" />
+    <ClInclude Include="Graphics\PacmanGraphics.h" />
+    <ClInclude Include="Graphics\SimpleGraphicsComponent.h" />
+    <ClInclude Include="Image\Image.h" />
+    <ClInclude Include="Input\InputComponent.h" />
+    <ClInclude Include="Input\PacmanInput.h" />
+    <ClInclude Include="Manipulators\ActorManipulatorComponent.h" />
+    <ClInclude Include="Manipulators\DotComponent.h" />
+    <ClInclude Include="Manipulators\PowerUpComponent.h" />
+    <ClInclude Include="Manipulators\TeleporterPhysics.h" />
+    <ClInclude Include="Map\PacmanMap.h" />
+    <ClInclude Include="Objects\GameObject.h" />
+    <ClInclude Include="Observer\IObserver.h" />
+    <ClInclude Include="Observer\Subject.h" />
+    <ClInclude Include="Physics\GhostPhysics.h" />
+    <ClInclude Include="Physics\PacmanPhysics.h" />
+    <ClInclude Include="Physics\PhysicsComponent.h" />
+    <ClInclude Include="Screens\DiedScreen.h" />
+    <ClInclude Include="Screens\GameOverScreen.h" />
+    <ClInclude Include="Screens\MainScreen.h" />
+    <ClInclude Include="Screens\OptionsScreen.h" />
+    <ClInclude Include="Screens\PauseScreen.h" />
+    <ClInclude Include="Screens\PlayScreen.h" />
+    <ClInclude Include="Screens\ScoresScreen.h" />
+    <ClInclude Include="Screens\Screen.h" />
+    <ClInclude Include="Screens\TransitionScreen.h" />
+    <ClInclude Include="Service\CollisionService.h" />
+    <ClInclude Include="Service\Font.h" />
+    <ClInclude Include="Service\Options.h" />
+    <ClInclude Include="Service\ScoresHandler.h" />
+    <ClInclude Include="Structures\Field.h" />
+    <ClInclude Include="Structures\ScoreEntry.h" />
+    <ClInclude Include="Timer\Timer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

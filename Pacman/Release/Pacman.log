@@ -1,0 +1,84 @@
+﻿Build started 9.5.2016. 19:44:48.
+     1>Project "C:\Users\DOMI\Documents\Visual Studio 2013\Projects\PacmanGameProject\Pacman\Pacman.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Actors\Ghost.cpp Actors\Pacman.cpp AI\BlinkyAI.cpp AI\ClydeAI.cpp AI\GhostAI.cpp AI\InkyAI.cpp AI\PinkyAI.cpp Factory\GameObjectFactory.cpp Factory\GhostFactory.cpp Factory\PacmanFactory.cpp Factory\ScreenFactory.cpp Graphics\GhostGraphics.cpp Graphics\PacmanGraphics.cpp Image\Image.cpp Input\PacmanInput.cpp Main.cpp Manipulators\DotComponent.cpp Manipulators\PowerUpComponent.cpp Manipulators\TeleporterPhysics.cpp Map\PacmanMap.cpp Physics\GhostPhysics.cpp Physics\PacmanPhysics.cpp Screens\DiedScreen.cpp Screens\GameOverScreen.cpp Screens\MainScreen.cpp Screens\OptionsScreen.cpp Screens\PauseScreen.cpp Screens\PlayScreen.cpp Screens\ScoresScreen.cpp Screens\TransitionScreen.cpp Service\CollisionService.cpp Service\Font.cpp Service\Options.cpp Service\ScoresHandler.cpp Timer\Timer.cpp
+         Ghost.cpp
+         Pacman.cpp
+         BlinkyAI.cpp
+         ClydeAI.cpp
+         GhostAI.cpp
+         InkyAI.cpp
+         PinkyAI.cpp
+         GameObjectFactory.cpp
+         GhostFactory.cpp
+         PacmanFactory.cpp
+         ScreenFactory.cpp
+         GhostGraphics.cpp
+         PacmanGraphics.cpp
+         Image.cpp
+         PacmanInput.cpp
+         Main.cpp
+         DotComponent.cpp
+         PowerUpComponent.cpp
+         TeleporterPhysics.cpp
+         PacmanMap.cpp
+         Compiling...
+         GhostPhysics.cpp
+         PacmanPhysics.cpp
+         DiedScreen.cpp
+         GameOverScreen.cpp
+         MainScreen.cpp
+         OptionsScreen.cpp
+         PauseScreen.cpp
+         PlayScreen.cpp
+         ScoresScreen.cpp
+         TransitionScreen.cpp
+         CollisionService.cpp
+         Font.cpp
+         Options.cpp
+         ScoresHandler.cpp
+         Timer.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\DOMI\Documents\Visual Studio 2013\Projects\PacmanGameProject\Release\Pacman.exe" /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib SDL2_ttf.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\DOMI\Documents\Visual Studio 2013\Projects\PacmanGameProject\Release\Pacman.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\DOMI\Documents\Visual Studio 2013\Projects\PacmanGameProject\Release\Pacman.lib" /MACHINE:X86 /SAFESEH Release\Ghost.obj
+         Release\Pacman.obj
+         Release\BlinkyAI.obj
+         Release\ClydeAI.obj
+         Release\GhostAI.obj
+         Release\InkyAI.obj
+         Release\PinkyAI.obj
+         Release\GameObjectFactory.obj
+         Release\GhostFactory.obj
+         Release\PacmanFactory.obj
+         Release\ScreenFactory.obj
+         Release\GhostGraphics.obj
+         Release\PacmanGraphics.obj
+         Release\Image.obj
+         Release\PacmanInput.obj
+         Release\Main.obj
+         Release\DotComponent.obj
+         Release\PowerUpComponent.obj
+         Release\TeleporterPhysics.obj
+         Release\PacmanMap.obj
+         Release\GhostPhysics.obj
+         Release\PacmanPhysics.obj
+         Release\DiedScreen.obj
+         Release\GameOverScreen.obj
+         Release\MainScreen.obj
+         Release\OptionsScreen.obj
+         Release\PauseScreen.obj
+         Release\PlayScreen.obj
+         Release\ScoresScreen.obj
+         Release\TransitionScreen.obj
+         Release\CollisionService.obj
+         Release\Font.obj
+         Release\Options.obj
+         Release\ScoresHandler.obj
+         Release\Timer.obj
+         Generating code
+         Finished generating code
+         Pacman.vcxproj -> C:\Users\DOMI\Documents\Visual Studio 2013\Projects\PacmanGameProject\Release\Pacman.exe
+     1>Done Building Project "C:\Users\DOMI\Documents\Visual Studio 2013\Projects\PacmanGameProject\Pacman\Pacman.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:23.50
